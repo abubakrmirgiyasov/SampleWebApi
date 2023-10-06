@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SampleApi.Models;
 using SampleApi.Repositories.Interfaces;
 using SampleApi.Services;
 using SampleApi.ViewModels;
@@ -31,23 +32,30 @@ public class CustomerRepository : ICustomerRepository
         }
     }
 
-    public async Task<IEnumerable<CustomerViewModel>> GetCustomersAsync(DateTimeOffset beginDate, decimal amount)
+    public async Task<List<CustomerViewModel>> GetCustomersAsync(DateTimeOffset beginDate, decimal amount)
     {
         try
         {
             var customers = await _context.Orders
                 .Include(x => x.Customer)
                 .ThenInclude(x => x.Manager)
-                // .Where(x.Amount > amount)
-                //.Where(x => x.CreationDate >= beginDate && x.CreationDate <= DateTimeOffset.Now) // slower because it is filtered in the database
+                .GroupBy(x => x.Customer.Id)
                 .ToListAsync();
 
-            var filteredData = customers
-                .Where(x => x.Amount > amount)
-                .Where(x => x.CreationDate >= beginDate && x.CreationDate <= DateTimeOffset.Now)
-                .ToList(); // more faster because C# filters in work :)
+            var viewModels = new List<CustomerViewModel>();
 
-            return CustomerFormingModel.FormingViewModels(filteredData);
+            for (int i = 0; i < customers.Count; i++)
+            {
+                viewModels.Add(new CustomerViewModel()
+                {
+                    Amount = customers[i].Sum(x => x.Amount),
+                    CustomerName = customers[i].First().Customer.Name,
+                    ManagerName = customers[i].First().Customer.Manager.Name,
+                    CreationDate = customers[i].First().CreationDate,
+                });
+            }
+
+            return viewModels.Where(x => x.Amount > amount && x.CreationDate >= beginDate && x.CreationDate <= DateTimeOffset.Now).ToList();
         }
         catch (Exception ex)
         {

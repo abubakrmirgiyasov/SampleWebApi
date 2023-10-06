@@ -121,7 +121,7 @@ public class ApplicationDbContext : DbContext
             {
                 Id = Guid.NewGuid(),
                 Amount = 1203,
-                CustomerId = customers[1].Id,
+                CustomerId = customers[0].Id,
                 CreationDate = DateTime.Parse("03.10.2023"),
             },
             new Order()

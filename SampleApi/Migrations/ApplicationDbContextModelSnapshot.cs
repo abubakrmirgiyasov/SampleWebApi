@@ -49,37 +49,37 @@ namespace SampleApi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("0247df4d-2900-4b1d-adfa-f3c6116ac8d5"),
-                            CreationDate = new DateTimeOffset(new DateTime(2023, 10, 6, 12, 45, 15, 655, DateTimeKind.Unspecified).AddTicks(9912), new TimeSpan(0, 7, 0, 0, 0)),
-                            ManagerId = new Guid("d1dad27f-e641-4df6-989d-f3e8c1690d6f"),
+                            Id = new Guid("e6b9a17a-243f-44fe-b5fc-78bb5276c21a"),
+                            CreationDate = new DateTimeOffset(new DateTime(2023, 10, 6, 18, 11, 12, 845, DateTimeKind.Unspecified).AddTicks(2010), new TimeSpan(0, 7, 0, 0, 0)),
+                            ManagerId = new Guid("8c1ef088-537d-4f86-87be-53cfcfffe523"),
                             Name = "Воронова Ксения Дмитриевна"
                         },
                         new
                         {
-                            Id = new Guid("2e2be775-40cf-4fc2-bbbc-fb2443955837"),
-                            CreationDate = new DateTimeOffset(new DateTime(2023, 10, 6, 12, 45, 15, 655, DateTimeKind.Unspecified).AddTicks(9917), new TimeSpan(0, 7, 0, 0, 0)),
-                            ManagerId = new Guid("66d8e6c0-7892-4e83-8079-49115f2d2e1f"),
+                            Id = new Guid("7e150fb6-3aec-4df5-bf6f-e804c2b8b488"),
+                            CreationDate = new DateTimeOffset(new DateTime(2023, 10, 6, 18, 11, 12, 845, DateTimeKind.Unspecified).AddTicks(2019), new TimeSpan(0, 7, 0, 0, 0)),
+                            ManagerId = new Guid("da60a851-3106-4cdd-8bdf-468d82b99c03"),
                             Name = "Семин Денис Григорьевич"
                         },
                         new
                         {
-                            Id = new Guid("f38b8b2c-f06e-4c1b-9b22-d527427ea04c"),
-                            CreationDate = new DateTimeOffset(new DateTime(2023, 10, 6, 12, 45, 15, 655, DateTimeKind.Unspecified).AddTicks(9919), new TimeSpan(0, 7, 0, 0, 0)),
-                            ManagerId = new Guid("d1dad27f-e641-4df6-989d-f3e8c1690d6f"),
+                            Id = new Guid("1aef54df-6132-4d17-ab4f-c60f83d39a6e"),
+                            CreationDate = new DateTimeOffset(new DateTime(2023, 10, 6, 18, 11, 12, 845, DateTimeKind.Unspecified).AddTicks(2025), new TimeSpan(0, 7, 0, 0, 0)),
+                            ManagerId = new Guid("8c1ef088-537d-4f86-87be-53cfcfffe523"),
                             Name = "Муравьев Кирилл Тихонович"
                         },
                         new
                         {
-                            Id = new Guid("16e43019-2224-402e-be80-7429a4790670"),
-                            CreationDate = new DateTimeOffset(new DateTime(2023, 10, 6, 12, 45, 15, 655, DateTimeKind.Unspecified).AddTicks(9922), new TimeSpan(0, 7, 0, 0, 0)),
-                            ManagerId = new Guid("72693689-97f2-4204-9466-1ade22aa3da5"),
+                            Id = new Guid("d6c6b95e-3e53-424f-92e1-6569029f4a9f"),
+                            CreationDate = new DateTimeOffset(new DateTime(2023, 10, 6, 18, 11, 12, 845, DateTimeKind.Unspecified).AddTicks(2029), new TimeSpan(0, 7, 0, 0, 0)),
+                            ManagerId = new Guid("e755978a-44bd-4106-bde1-1e88bca3d0cf"),
                             Name = "Попова Кира Кирилловна"
                         },
                         new
                         {
-                            Id = new Guid("9006c780-7c41-4c75-bfda-130e186dabe3"),
-                            CreationDate = new DateTimeOffset(new DateTime(2023, 10, 6, 12, 45, 15, 655, DateTimeKind.Unspecified).AddTicks(9924), new TimeSpan(0, 7, 0, 0, 0)),
-                            ManagerId = new Guid("66d8e6c0-7892-4e83-8079-49115f2d2e1f"),
+                            Id = new Guid("23a4127d-7df2-4561-8ba8-5b4a08ca0229"),
+                            CreationDate = new DateTimeOffset(new DateTime(2023, 10, 6, 18, 11, 12, 845, DateTimeKind.Unspecified).AddTicks(2050), new TimeSpan(0, 7, 0, 0, 0)),
+                            ManagerId = new Guid("da60a851-3106-4cdd-8bdf-468d82b99c03"),
                             Name = "Рыжов Даниил Кириллович"
                         });
                 });
@@ -106,20 +106,20 @@ namespace SampleApi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("d1dad27f-e641-4df6-989d-f3e8c1690d6f"),
-                            CreationDate = new DateTimeOffset(new DateTime(2023, 10, 6, 12, 45, 15, 655, DateTimeKind.Unspecified).AddTicks(9807), new TimeSpan(0, 7, 0, 0, 0)),
+                            Id = new Guid("8c1ef088-537d-4f86-87be-53cfcfffe523"),
+                            CreationDate = new DateTimeOffset(new DateTime(2023, 10, 6, 18, 11, 12, 845, DateTimeKind.Unspecified).AddTicks(1914), new TimeSpan(0, 7, 0, 0, 0)),
                             Name = "Жуков Даниил Евгеньевич"
                         },
                         new
                         {
-                            Id = new Guid("66d8e6c0-7892-4e83-8079-49115f2d2e1f"),
-                            CreationDate = new DateTimeOffset(new DateTime(2023, 10, 6, 12, 45, 15, 655, DateTimeKind.Unspecified).AddTicks(9904), new TimeSpan(0, 7, 0, 0, 0)),
+                            Id = new Guid("da60a851-3106-4cdd-8bdf-468d82b99c03"),
+                            CreationDate = new DateTimeOffset(new DateTime(2023, 10, 6, 18, 11, 12, 845, DateTimeKind.Unspecified).AddTicks(1996), new TimeSpan(0, 7, 0, 0, 0)),
                             Name = "Розанов Макар Михайлович"
                         },
                         new
                         {
-                            Id = new Guid("72693689-97f2-4204-9466-1ade22aa3da5"),
-                            CreationDate = new DateTimeOffset(new DateTime(2023, 10, 6, 12, 45, 15, 655, DateTimeKind.Unspecified).AddTicks(9907), new TimeSpan(0, 7, 0, 0, 0)),
+                            Id = new Guid("e755978a-44bd-4106-bde1-1e88bca3d0cf"),
+                            CreationDate = new DateTimeOffset(new DateTime(2023, 10, 6, 18, 11, 12, 845, DateTimeKind.Unspecified).AddTicks(2003), new TimeSpan(0, 7, 0, 0, 0)),
                             Name = "Соколова Алина Никитична"
                         });
                 });
@@ -151,38 +151,38 @@ namespace SampleApi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("f6da51bb-72dd-472a-b518-cf8c9cd04aca"),
+                            Id = new Guid("b85abd28-af4a-4bb2-a486-7ac6ff66436e"),
                             Amount = 578m,
                             CreationDate = new DateTimeOffset(new DateTime(2023, 10, 6, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)),
-                            CustomerId = new Guid("0247df4d-2900-4b1d-adfa-f3c6116ac8d5")
+                            CustomerId = new Guid("e6b9a17a-243f-44fe-b5fc-78bb5276c21a")
                         },
                         new
                         {
-                            Id = new Guid("b902517e-8916-4216-b080-527d688d7a8c"),
+                            Id = new Guid("afd2c5f1-4085-404d-badc-f5341881cf70"),
                             Amount = 1203m,
                             CreationDate = new DateTimeOffset(new DateTime(2023, 10, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)),
-                            CustomerId = new Guid("2e2be775-40cf-4fc2-bbbc-fb2443955837")
+                            CustomerId = new Guid("e6b9a17a-243f-44fe-b5fc-78bb5276c21a")
                         },
                         new
                         {
-                            Id = new Guid("55677acf-ae46-49b9-aea4-11c2f1a669dc"),
+                            Id = new Guid("249b5ebb-9196-4119-9b41-9c2f2a14b31d"),
                             Amount = 1000m,
                             CreationDate = new DateTimeOffset(new DateTime(2023, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)),
-                            CustomerId = new Guid("f38b8b2c-f06e-4c1b-9b22-d527427ea04c")
+                            CustomerId = new Guid("1aef54df-6132-4d17-ab4f-c60f83d39a6e")
                         },
                         new
                         {
-                            Id = new Guid("458739e9-ff2b-4a3f-85ad-7787f8b4290d"),
+                            Id = new Guid("2e0eb0b7-c04f-4f2e-b60c-1c9e482fd061"),
                             Amount = 999m,
                             CreationDate = new DateTimeOffset(new DateTime(2023, 9, 29, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)),
-                            CustomerId = new Guid("16e43019-2224-402e-be80-7429a4790670")
+                            CustomerId = new Guid("d6c6b95e-3e53-424f-92e1-6569029f4a9f")
                         },
                         new
                         {
-                            Id = new Guid("2397ba58-2f56-4a57-981c-b4060fdedeee"),
+                            Id = new Guid("8edfe056-8943-4d70-9149-9577d4b28e4d"),
                             Amount = 790m,
                             CreationDate = new DateTimeOffset(new DateTime(2023, 9, 30, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 7, 0, 0, 0)),
-                            CustomerId = new Guid("9006c780-7c41-4c75-bfda-130e186dabe3")
+                            CustomerId = new Guid("23a4127d-7df2-4561-8ba8-5b4a08ca0229")
                         });
                 });
 

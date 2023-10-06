@@ -11,6 +11,8 @@ public class CustomerViewModel
     public string ManagerName { get; set; }
 
     public decimal Amount { get; set; }
+
+    public DateTimeOffset CreationDate { get; set; }
 }
 
 /// <summary>

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SampleApi.Repositories.Interfaces;
+using SampleApi.ViewModels;
 
 namespace SampleApi.Controllers;
 

@@ -6,5 +6,5 @@ public interface ICustomerRepository
 {
     Task<IEnumerable<CustomerViewModel>> GetCustomersAsync();
 
-    Task<IEnumerable<CustomerViewModel>> GetCustomersAsync(DateTimeOffset beginDate, decimal amount);
+    Task<List<CustomerViewModel>> GetCustomersAsync(DateTimeOffset beginDate, decimal amount);
 }
